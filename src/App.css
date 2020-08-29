@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+html,
+body {
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  background-color: black;
+}
+
+.experience {
+  height: 100vh;
+  width: 100vw;
+}
+
+.direction-buttons {
+  position: absolute;
+  bottom: 40%;
+  display: flex;
+  width: 94vw;
+  z-index: 5;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.direction-buttons-ip{
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  width: 94vw;
+  z-index: 5;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.direction-buttons button {
+  padding: 2% 6%;
+}
+
+.firstOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 8 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 120vh;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(33, 33, 33, 0.7);
+}
+.firstOverlay-ip {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 8 !important;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: calc(120vh + 40px);
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(33, 33, 33, 0.7);
+}
+
+.firstOverlay * {
+  font-family: 'Lato', sans-serif !important;
+  color: #fac553;
+}
+.firstOverlay-ip * {
+  font-family: 'Lato', sans-serif !important;
+  color: #fac553;
+}
+
+.slider-top-container {
+  position: absolute;
+  bottom: 2px !important;
+  z-index: 9 !important;
+  display: flex;
+  flex-direction: row;
+  width: 96vw;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.slider-top-container-ip{
+  position: absolute;
+  top: calc(100vh + 35px) !important;
+  z-index: 9 !important;
+  display: flex;
+  flex-direction: row;
+  width: 96vw;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.slider-top-button {
+  width: 4.5%;
+  padding: 3px 10px;
+  margin: 3px;
+  border-radius: 0%;
+  background-color: rgba(83, 83, 83, 0.6);
+}
+
+.logo {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  width: 60px;
+  z-index: 10;
+}
+
+.logo-ip{
+  position: absolute;
+  top: 18%;
+  left: 3%;
+  width: 60px;
+  z-index: 10;
+}
+.arrows {
+  width: 20px;
+  height: 30px;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+}
+
+.dadDiv {
+  text-align: center;
+  background-color: black;
+}
+
+.turn-container {
+  width: 100vw;
+  background-color: black;
+  display: none;
+}
+
+.turn-img {
+  width: 300px;
+}
+
+@media only screen and (orientation: portrait) {
+  .turn-container {
+    display: block;
+    text-align: center;
+    padding: 50% 0;
+    position: absolute;
+    top: 5vh;
+  }
+
+  video,
+  #firstOverlay,
+  .experience,
+  #share-btn {
+    display: none;
+  }
+
+}
+
+.iphone-check {
+  height: 40px;
+}
+
+@media (min-height: 375px) and (min-width: 812px) {
+  .direction-buttons {
+    bottom: 40%;
+  }
+}
+
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.share-btn {
+  width: 50px;
+  position: absolute;
+  bottom: 35px;
+  right: 25px;
+  z-index: 10;
+}
+.share-btn-ip {
+  width: 50px;
+  position: absolute;
+  top: calc(90vh + 2px) !important;
+  right: 25px;
+  z-index: 10;
+}
+
+.closeButton {
+  
+}
+
+
+@media screen and (min-device-width: 1000px) {
+
+  html,
+  body {
+    overflow: hidden;
+  }
+}
+
