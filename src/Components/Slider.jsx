@@ -16,7 +16,7 @@ import slide14 from './../resources/Jafra Slide 14 Arabic.mp4'
 import slide15 from './../resources/Jafra Slide 15 Arabic.mp4'
 import slide16 from './../resources/Jafra Slide 16 Arabic.mp4'
 import slide17 from './../resources/Jafra Slide 17 Arabic.mp4'
-// import slide18 from './../resources/Jafra Slide 18 Arabic.mp4'
+ import slide18 from './../resources/Jafra Slide 18 Arabic.mp4'
 import arrowLeft from './../resources/left-arrow.png'
 import arrowRight from './../resources/right-arrow.png'
 import IphoneChecker from './IphoneChecker';
@@ -94,7 +94,7 @@ export class Slider extends Component {
                 case 15: return <div className="dadDiv"> <video onClick={this.pause} ref={el => this.videoElement = el} src={slide15} autoPlay loop playsInline> </video></div>;
                 case 16: return <div className="dadDiv"> <video onClick={this.pause} ref={el => this.videoElement = el} src={slide16} autoPlay loop playsInline> </video></div>;
                 case 17: return <div className="dadDiv"> <video onClick={this.pause} ref={el => this.videoElement = el} src={slide17} autoPlay loop playsInline> </video></div>;
-                // case 18: return <div className="dadDiv"> <video onClick={this.pause} ref={el => this.videoElement = el} src={slide18} autoPlay loop playsInline> </video></div>;
+                 case 18: return <div className="dadDiv"> <video onClick={this.pause} ref={el => this.videoElement = el} src={slide18} autoPlay loop playsInline> </video></div>;
 
 
                 default: return <h1>No videoo match</h1>
