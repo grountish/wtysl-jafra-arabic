@@ -79,6 +79,15 @@ body {
   color: #fac553;
 }
 
+.textOverlay{
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  padding: 2em;
+  font-size: larger;
+}
+
+
 .slider-top-container {
   position: absolute;
   bottom: 2px !important;
@@ -122,6 +131,21 @@ body {
   top: 18%;
   left: 3%;
   width: 60px;
+  z-index: 10;
+}
+.home {
+  width: 50px;
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+  z-index: 10;
+}
+
+.home-ip{
+  width: 50px;
+  position: absolute;
+  top: calc(90vh + 2px) !important;
+  left: 25px;
   z-index: 10;
 }
 .arrows {
@@ -206,9 +230,6 @@ video {
   z-index: 10;
 }
 
-.closeButton {
-  
-}
 
 
 @media screen and (min-device-width: 1000px) {
